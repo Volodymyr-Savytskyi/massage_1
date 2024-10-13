@@ -1,0 +1,218 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #ddd;
+}
+
+.img{
+    background-image: url(./src/happy-young-smiling-confident-professional-business_1173099-13780.jpg);
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    border: none;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    transition: background-size 0.3s ease;
+    border: none;
+}
+
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #333;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover,
+.hero .btn:focus {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Секції */
+section {
+    padding: 40px 0;
+    transition: background-color 0.3s ease;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Послуги */
+.service-item {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover,
+.service-item:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Плавні переходи для кнопок та посилань */
+button, a {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+button:focus,
+a:hover,
+a:focus {
+    opacity: 0.8;
+}
+
+/* Адаптивні стилі */
+
+/* Мобільні пристрої (до 600px) */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero .btn {
+        padding: 8px 16px;
+    }
+
+    .service-item {
+        padding: 15px;
+    }
+}
+
+/* Планшети (600px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 350px;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Великі екрани (понад 1024px) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+}
